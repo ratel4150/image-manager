@@ -42,3 +42,45 @@
 
   
 }
+.contendor-imagen-app{
+  margin: 1%;
+  min-height: 70%;
+  height: 70%;
+  min-width: 30%;
+  width: 30%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+
+}
+.contendor-imagen-app-efecto-entrante{
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes zoomIn {
+  0% {
+  opacity: 0;
+  -webkit-transform: scale3d(.3, .3, .3);
+  transform: scale3d(.3, .3, .3);
+  }
+  50% {
+  opacity: 1;
+  }
+  }
+  @keyframes zoomIn {
+  0% {
+  opacity: 0;
+  -webkit-transform: scale3d(.3, .3, .3);
+  transform: scale3d(.3, .3, .3);
+  }
+  50% {
+  opacity: 1;
+  }
+
+}

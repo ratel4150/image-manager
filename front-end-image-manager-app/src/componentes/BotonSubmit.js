@@ -3,7 +3,7 @@ import React, { useState } from "react";
 function BotonSubmit(props) {
 
 
-  const [cargarImagen, setCargarImagen] = useState({});
+  
   
   const manejadorCambio = async ({ target }) => {
     const { files } = target;
@@ -20,17 +20,17 @@ function BotonSubmit(props) {
       }
     )
       .then((response) => response.json())
-      .then((data) => setCargarImagen(data));
+      .then((data) => props.setcargarImagen(data));
     
 
-      setEstilosInput({
+      props.estilosSet({
       height: "100%",
       display: "none",
       
     });
   };
   return (
-    <label className="etiqueta-app" style={{display:`${estilos.display}`}}>
+    <label className="etiqueta-app" style={{display:`${props.estilos.display}`}}>
       <input type="file"  name="file" onChange={manejadorCambio} />
       Carga tu foto 
     </label>

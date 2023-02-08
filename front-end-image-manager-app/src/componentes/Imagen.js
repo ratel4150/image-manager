@@ -1,13 +1,10 @@
 import React, { useState } from 'react'
 
-function Imagen() {
-    const [fileStyle, setFileStyle] = useState({
-        height: "80%",
-        display: "flex",
-      });
+function Imagen(props) {
+    
   return (
     <div className="imagen-app">
-        <img alt="imagen"/>
+        <img src={props.cargarImg["secure_url"]} alt="imagen" style={{width: `${props.estilosCont.width}`}}/>
     </div>
   )
 }

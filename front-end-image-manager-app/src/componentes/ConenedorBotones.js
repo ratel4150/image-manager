@@ -2,7 +2,9 @@ import React from 'react'
 
 function ConenedorBotones() {
   return (
-    <div>ConenedorBotones</div>
+    <div className="contenedor-botones-app">
+        
+    </div>
   )
 }
 

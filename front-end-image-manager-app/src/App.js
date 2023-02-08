@@ -5,7 +5,7 @@ import UploadImage from './component/UploadImage';
 function App() {
   return (
     <div>
-      <UploadImage/>
+      
     
     </div>
   );

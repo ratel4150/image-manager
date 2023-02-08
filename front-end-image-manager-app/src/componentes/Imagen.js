@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 function Imagen() {
     const [fileStyle, setFileStyle] = useState({
@@ -6,7 +6,9 @@ function Imagen() {
         display: "flex",
       });
   return (
-    <div className="imagen-app">Imagen</div>
+    <div className="imagen-app">
+        <img alt="imagen"/>
+    </div>
   )
 }
 

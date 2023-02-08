@@ -1,7 +1,7 @@
-  @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap");
-.contendor-principal-app{
-   min-height: 100vh;
-   background: #ffefba; /* fallback for old browsers */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap");
+.contendor-principal-app {
+  min-height: 100vh;
+  background: #ffefba; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
     #ffffff,
@@ -16,11 +16,9 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  
-
 }
 
-.titulo-principal-app{
+.titulo-principal-app {
   text-align: center;
   font-family: "Roboto,sans-serif";
   font-size: 3rem;
@@ -28,7 +26,7 @@
   display: block;
   filter: drop-shadow(1px 2px 1px gray);
 }
-.formulario-carga-imagenes-app{
+.formulario-carga-imagenes-app {
   height: 400px;
   width: 600px;
   padding: 1%;
@@ -38,11 +36,8 @@
   overflow-x: hidden;
   flex-wrap: wrap;
   box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
-  
-
-  
 }
-.contendor-imagen-app{
+.contendor-imagen-app {
   margin: 1%;
   min-height: 70%;
   height: 70%;
@@ -53,34 +48,50 @@
   flex-direction: column;
   border-radius: 10px;
   overflow: hidden;
-
 }
-.contendor-imagen-app-efecto-entrante{
+.contendor-imagen-app-efecto-entrante {
   -webkit-animation-name: zoomIn;
   animation-name: zoomIn;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-  }
-  @-webkit-keyframes zoomIn {
+}
+@-webkit-keyframes zoomIn {
   0% {
-  opacity: 0;
-  -webkit-transform: scale3d(.3, .3, .3);
-  transform: scale3d(.3, .3, .3);
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
   }
   50% {
-  opacity: 1;
+    opacity: 1;
   }
-  }
-  @keyframes zoomIn {
+}
+@keyframes zoomIn {
   0% {
-  opacity: 0;
-  -webkit-transform: scale3d(.3, .3, .3);
-  transform: scale3d(.3, .3, .3);
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
   }
   50% {
-  opacity: 1;
+    opacity: 1;
   }
+}
+/* flex */
+.imagen-app {
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+}
+.etiqueta-app{
+  background-color: lightsalmon;
+  color: white;
+  height: 20%;
+  justify-content: center;
+  align-items: center;
+
+}
+input[type="file"]{
+  display: none;
 
 }
